@@ -12,15 +12,6 @@ const init = async () => {
     },
   });
 
-  // Add a route to handle requests for all books
-  server.route({
-    method: 'GET',
-    path: '/books',
-    handler: async (request, h) => {
-      return h.response(books);
-    },
-  });
-
   server.route(routes);
 
   await server.start();
