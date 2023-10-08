@@ -8,6 +8,8 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "plugins": ["hapi"],
     "rules": {
+        "hapi/server-route-before-start": "error"
     }
 }
